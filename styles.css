@@ -14,7 +14,7 @@ header {
 
 main {
     margin-top: 160px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     width: 100%;
 }
 
@@ -28,18 +28,18 @@ p {
     font-family: 'Baloo Bhaina 2', cursive;
     text-align: center;
 }
+
+footer {
+    padding-bottom: 5px;
+    position: fixed;
+    margin:0;
+    bottom:0;
+    width:100%;
+    background-color: aliceblue;
+}
+
 aside {
     font-family: 'Baloo Bhaina 2', cursive;
     text-align: center;
     font-size: smaller;
-}
-
-footer {
-    margin-top: 40px;
-    position: fixed;
-    margin: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    background-color: aliceblue;
 }
