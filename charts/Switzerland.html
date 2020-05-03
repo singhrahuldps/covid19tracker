@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="utf-8">
+                <title>Overview</title>
+                
+
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.4.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-tables-1.4.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-gl-1.4.0.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+                
+<script type="text/javascript">
+    (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  
+                var docs_json = '{"cb1537b9-c407-4970-af6c-46aa04f47b1b":{"roots":{"references":[{"attributes":{},"id":"62899","type":"UnionRenderers"},{"attributes":{},"id":"62916","type":"UnionRenderers"},{"attributes":{"callback":null,"data":{"top":[122,55,68,42,116,152,212,267,238,841,0,450,360,878,952,1237,894,1044,774,925,1000,1390,1048,1122,1138,696,962,1124,1033,974,821,552,590,546,785,733,592,400,279,254,583,315,346,325,336,168,155,205,228,181,216,167,103,100,143,179,119,112],"x":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67]},"selected":{"id":"62885","type":"Selection"},"selection_policy":{"id":"62884","type":"UnionRenderers"}},"id":"62862","type":"ColumnDataSource"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"62904","type":"Line"},{"attributes":{"below":[{"id":"62844","type":"LinearAxis"}],"center":[{"id":"62848","type":"Grid"},{"id":"62853","type":"Grid"},{"id":"62872","type":"Legend"}],"left":[{"id":"62849","type":"LinearAxis"}],"plot_height":350,"plot_width":500,"renderers":[{"id":"62865","type":"GlyphRenderer"},{"id":"62877","type":"GlyphRenderer"},{"id":"62890","type":"GlyphRenderer"},{"id":"62905","type":"GlyphRenderer"}],"title":{"id":"62836","type":"Title"},"toolbar":{"id":"62855","type":"Toolbar"},"x_range":{"id":"62834","type":"Range1d"},"x_scale":{"id":"62840","type":"LinearScale"},"y_range":{"id":"62833","type":"Range1d"},"y_scale":{"id":"62842","type":"LinearScale"}},"id":"62835","subtype":"Figure","type":"Plot"},{"attributes":{"bounds":"auto","callback":null,"end":70},"id":"62834","type":"Range1d"},{"attributes":{"formatter":{"id":"62859","type":"BasicTickFormatter"},"ticker":{"id":"62850","type":"BasicTicker"}},"id":"62849","type":"LinearAxis"},{"attributes":{"data_source":{"id":"62874","type":"ColumnDataSource"},"glyph":{"id":"62875","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"62876","type":"VBar"},"selection_glyph":null,"view":{"id":"62878","type":"CDSView"}},"id":"62877","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"62902","type":"ColumnDataSource"},"glyph":{"id":"62903","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"62904","type":"Line"},"selection_glyph":null,"view":{"id":"62906","type":"CDSView"}},"id":"62905","type":"GlyphRenderer"},{"attributes":{"ticker":{"id":"62845","type":"BasicTicker"}},"id":"62848","type":"Grid"},{"attributes":{},"id":"62840","type":"LinearScale"},{"attributes":{"line_color":"blue","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"62888","type":"Line"},{"attributes":{},"id":"62917","type":"Selection"},{"attributes":{"source":{"id":"62887","type":"ColumnDataSource"}},"id":"62891","type":"CDSView"},{"attributes":{"source":{"id":"62902","type":"ColumnDataSource"}},"id":"62906","type":"CDSView"},{"attributes":{"callback":null,"data":{"x":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67],"y":[92.5,109.57142857142857,129.25,141.33333333333334,211.3,233.0,254.63636363636363,329.45454545454544,409.8181818181818,518.4545454545455,558.7,589.1818181818181,670.2727272727273,721.3636363636364,781.1818181818181,850.4545454545455,900.3636363636364,954.7272727272727,1024.0,1047.6363636363637,1024.3636363636363,999.3636363636364,1020.2727272727273,1019.2727272727273,1037.4545454545455,1028.0,987.2727272727273,914.5454545454545,868.9090909090909,838.2727272727273,801.4545454545455,792.0,740.9090909090909,664.0909090909091,593.2727272727273,557.7272727272727,511.72727272727275,493.0,468.90909090909093,449.8181818181818,393.72727272727275,341.1818181818182,306.0,290.3636363636364,281.45454545454544,278.0,240.1818181818182,220.9090909090909,198.54545454545453,182.0,167.72727272727272,163.27272727272728,159.36363636363637,154.8,146.66666666666666,142.375,131.85714285714286,126.0]},"selected":{"id":"62917","type":"Selection"},"selection_policy":{"id":"62916","type":"UnionRenderers"}},"id":"62887","type":"ColumnDataSource"},{"attributes":{"callback":null,"tooltips":[["People","$y"],["Days (since 50 cases)","$index"]]},"id":"62854","type":"HoverTool"},{"attributes":{"axis_label":"Days (since 50 cases)","formatter":{"id":"62861","type":"BasicTickFormatter"},"ticker":{"id":"62845","type":"BasicTicker"}},"id":"62844","type":"LinearAxis"},{"attributes":{"label":{"value":"Moving Average"},"renderers":[{"id":"62890","type":"GlyphRenderer"}]},"id":"62901","type":"LegendItem"},{"attributes":{"bounds":"auto","callback":null,"end":1459},"id":"62833","type":"Range1d"},{"attributes":{"label":{"value":"Predicted Curve"},"renderers":[{"id":"62905","type":"GlyphRenderer"}]},"id":"62918","type":"LegendItem"},{"attributes":{"label":{"value":"Daily Deaths"},"renderers":[{"id":"62877","type":"GlyphRenderer"}]},"id":"62886","type":"LegendItem"},{"attributes":{"callback":null,"data":{"x":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67],"y":[62.425841946647054,83.34943440625857,109.56076462313081,141.78216400170078,180.63516306832634,226.56725295887293,279.77321355894185,340.11773034887284,407.0676237684057,479.64287827782397,556.3954727901181,635.4235747753063,714.4259287925054,790.7974157564827,861.7621662802003,924.5358459440791,976.5044656319268,1015.4039812823081,1039.4835927737315,1047.6363636363637,1045.4299781092245,1038.838663090783,1027.9453585536507,1012.8863658989737,993.8485095669361,971.0652798720262,944.8120683843865,915.400631742138,883.1729393690989,848.4945745604648,811.7478664045992,773.3249319081303,733.620803615613,693.0268083366753,651.9243479007141,610.6792139196604,569.6365462582735,529.1165202838981,489.41082202933455,450.7799441811394,413.4513102756418,377.6182105273942,343.4395110849079,311.04007981135356,280.5118563629908,251.91548265347637,225.28240184706857,200.6173297590015,177.90100175671634,157.09310063213323,138.1352760406184,120.95417349917008,105.46440008935484,91.57136439331522,79.17393929030338,68.16690757687623,58.443161516513,49.89563800677251,42.41898077708229,35.91092967421727,30.27344450489501,25.413577004287294,21.24410926694639,17.683980448242142,14.65852580002291,12.099553258233696,9.945282991044053,8.140174696336826]},"selected":{"id":"62931","type":"Selection"},"selection_policy":{"id":"62930","type":"UnionRenderers"}},"id":"62902","type":"ColumnDataSource"},{"attributes":{"callback":null,"data":{"top":[0,0,1,0,1,1,0,3,4,2,1,5,2,12,10,13,4,6,20,17,58,36,38,22,38,78,5,54,52,56,19,25,57,64,51,49,26,27,0,42,73,43,42,52,24,7,45,30,51,41,20,8,16,27,28,15,12,32],"x":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67]},"selected":{"id":"62900","type":"Selection"},"selection_policy":{"id":"62899","type":"UnionRenderers"}},"id":"62874","type":"ColumnDataSource"},{"attributes":{},"id":"62861","type":"BasicTickFormatter"},{"attributes":{"line_color":"red","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"62903","type":"Line"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"62889","type":"Line"},{"attributes":{"data_source":{"id":"62887","type":"ColumnDataSource"},"glyph":{"id":"62888","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"62889","type":"Line"},"selection_glyph":null,"view":{"id":"62891","type":"CDSView"}},"id":"62890","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"top"},"width":{"value":0.9},"x":{"field":"x"}},"id":"62864","type":"VBar"},{"attributes":{"items":[{"id":"62873","type":"LegendItem"},{"id":"62886","type":"LegendItem"},{"id":"62901","type":"LegendItem"},{"id":"62918","type":"LegendItem"}]},"id":"62872","type":"Legend"},{"attributes":{},"id":"62930","type":"UnionRenderers"},{"attributes":{},"id":"62845","type":"BasicTicker"},{"attributes":{"source":{"id":"62874","type":"ColumnDataSource"}},"id":"62878","type":"CDSView"},{"attributes":{"data_source":{"id":"62862","type":"ColumnDataSource"},"glyph":{"id":"62863","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"62864","type":"VBar"},"selection_glyph":null,"view":{"id":"62866","type":"CDSView"}},"id":"62865","type":"GlyphRenderer"},{"attributes":{"label":{"value":"Daily Cases"},"renderers":[{"id":"62865","type":"GlyphRenderer"}]},"id":"62873","type":"LegendItem"},{"attributes":{},"id":"62885","type":"Selection"},{"attributes":{"dimension":1,"ticker":{"id":"62850","type":"BasicTicker"}},"id":"62853","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"top"},"width":{"value":0.9},"x":{"field":"x"}},"id":"62876","type":"VBar"},{"attributes":{"text":"Switzerland"},"id":"62836","type":"Title"},{"attributes":{},"id":"62931","type":"Selection"},{"attributes":{},"id":"62842","type":"LinearScale"},{"attributes":{},"id":"62900","type":"Selection"},{"attributes":{"source":{"id":"62862","type":"ColumnDataSource"}},"id":"62866","type":"CDSView"},{"attributes":{},"id":"62859","type":"BasicTickFormatter"},{"attributes":{"fill_color":{"value":"red"},"line_color":{"value":"red"},"top":{"field":"top"},"width":{"value":0.9},"x":{"field":"x"}},"id":"62875","type":"VBar"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"62854","type":"HoverTool"}]},"id":"62855","type":"Toolbar"},{"attributes":{},"id":"62884","type":"UnionRenderers"},{"attributes":{"fill_color":{"value":"orange"},"line_color":{"value":"orange"},"top":{"field":"top"},"width":{"value":0.9},"x":{"field":"x"}},"id":"62863","type":"VBar"},{"attributes":{},"id":"62850","type":"BasicTicker"}],"root_ids":["62835"]},"title":"Bokeh Application","version":"1.4.0"}}';
+                var render_items = [{"docid":"cb1537b9-c407-4970-af6c-46aa04f47b1b","roots":{"62835":"2c23f6a8-9b2c-4c17-a79f-2a306565e578"}}];
+                root.Bokeh.embed.embed_items(docs_json, render_items);
+              
+                }
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      clearInterval(timer);
+                      embed_document(root);
+                    } else {
+                      attempts++;
+                      if (attempts > 100) {
+                        clearInterval(timer);
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                      }
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+</script>
+                <style>
+                    .embed-wrapper {
+                        display: flex;
+                        justify-content: space-evenly;
+                    }
+                </style>
+            </head>
+            <body  style="width: min-content ;margin: 0 auto;">
+                <div>
+                    
+                </div>                    
+                <div class="embed-wrapper">
+                    
+<div class="bk-root" id="2c23f6a8-9b2c-4c17-a79f-2a306565e578" data-root-id="62835"></div>
+                </div>
+            </body>
+        </html>
+        
