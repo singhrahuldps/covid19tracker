@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+header {
+    margin-bottom: 40px;
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+    background-color: #f0f8ff;
+}
+
+main {
+    margin-top: 150px;
+}
+
+h1 {
+    font-family: 'Baloo Bhaina 2', cursive;
+    text-align: center;
+}
+
+p {
+    font-family: 'Baloo Bhaina 2', cursive;
+    text-align: center;
+}
+aside {
+    font-family: 'Baloo Bhaina 2', cursive;
+    text-align: center;
+    font-size: smaller;
+}
+
+iframe {
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    margin-top: 40px;
+    position: fixed;
+    margin: 0 auto;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    background-color: aliceblue;
+}
