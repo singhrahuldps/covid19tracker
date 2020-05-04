@@ -32,6 +32,10 @@ jobs:
           python run.py
       - name: check for changes
         run: git status
+      - name: authenticate github
+        run: |
+          git config --local github.user commitbot
+          git config --local github.token ${{ secrets.GITHUB_TOKEN }} 
       - name: stage changed files
         run: git add .
       - name: commit changed files
