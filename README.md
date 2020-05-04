@@ -28,8 +28,20 @@ class MyAlgorithm():
         return your_new_cases_prediction_for_each_country_in_the_order_of_country_names
 ```
 
+View your changes on **index.html** by running the following command in terminal
+
+```bash
+python run.py
+```
+
+Ifyou want to only create output files for your own algorithm, use the following arguments
+
+```bash
+python run.py -u yourGithubUsername -a YourAlgorithm1, YourAlgorithm2, YourAlgorithm3
+```
+
 ## Dependencies
 
 ```bash
-pip install numpy scipy pandas requests bokeh
+pip install numpy scipy pandas requests pathlib bokeh
 ```
