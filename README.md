@@ -2,6 +2,8 @@
 
 Create your own algorithms which fit on the covid-19 Dataset and send a Pull Request. Accepted code algorithms will be published to the website [singhrahuldps.github.io/covid19tracker](https://singhrahuldps.github.io/covid19tracker).
 
+## Add your own algorithm
+
 Add your module to the Algorithm folder and add the py file name to the __init__.py file. Make sure to keep the file name to be your GitHub username. Also add the import statement for your module in the __init__.py.
 
 Add a classNames list to your module which contains the names of your algorithm classes.
