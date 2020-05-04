@@ -14,7 +14,6 @@ header {
 
 main {
     margin-top: 160px;
-    margin-bottom: 40px;
     width: 100%;
 }
 
@@ -48,12 +47,16 @@ p {
 }
 
 a {
-   padding-top: 10px; 
+    display: flex;
+   padding: 10px;
+   margin: 30px auto;
+   width: fit-content;
+   text-align: center;
+   background-color: #9fc1e7; 
 }
 
 body footer {
     padding-bottom: 5px;
-    position: relative;
     margin:0;
     bottom:0;
     width:100%;
