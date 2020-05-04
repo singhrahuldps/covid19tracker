@@ -46,19 +46,14 @@ p {
     text-align: center;
 }
 
-a {
-    -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-    display: flexbox;
-   padding: 10px;
-   margin: 30px auto;
-   width: fit-content;
-   text-align: center;
-   background-color: #9fc1e7; 
+
+#togithub {
+    font-weight: bolder;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    margin: 30px auto;
+    background-color: antiquewhite; 
 }
 
 body footer {
