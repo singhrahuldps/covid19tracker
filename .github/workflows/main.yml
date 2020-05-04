@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run the script to update the HTML files
         run: |
-          pip install scipy numpy pandas requests bokeh
+          pip install scipy numpy pandas pathlib requests bokeh
           python run.py
       - name: check for changes
         run: git status
