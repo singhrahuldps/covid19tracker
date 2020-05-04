@@ -25,3 +25,9 @@ class MyAlgorithm():
         # returns list
         return your_new_cases_prediction_for_each_country_in_the_order_of_country_names
 ```
+
+## Dependencies
+
+```bash
+pip install numpy scipy pandas requests bokeh
+```
