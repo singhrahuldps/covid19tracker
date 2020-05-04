@@ -47,7 +47,13 @@ p {
 }
 
 a {
-    display: flex;
+    -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+    display: flexbox;
    padding: 10px;
    margin: 30px auto;
    width: fit-content;
