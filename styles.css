@@ -14,7 +14,7 @@ header {
 
 main {
     margin-top: 160px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     width: 100%;
 }
 
@@ -47,9 +47,13 @@ p {
     text-align: center;
 }
 
+a {
+   padding-top: 10px; 
+}
+
 body footer {
     padding-bottom: 5px;
-    position: fixed;
+    position: relative;
     margin:0;
     bottom:0;
     width:100%;
