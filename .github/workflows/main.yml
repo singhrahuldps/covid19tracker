@@ -1,0 +1,13 @@
+on:
+    schedule:
+      # * is a special character in YAML so you have to quote this string
+      - cron:  '*H 12 * * *'
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+    - name: Run the script 
+      id: runscript
+      uses: actions/covid19trackeraction
