@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8">
-<link rel="icon" href="cticon.ico" type="image/icon type">
-<meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#f0f8ff">
-<link rel="stylesheet" href="styles.css">
 <title>Covid-19 Tracker</title>
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="aquamarine">
+<link rel="icon" href="cticon.ico" type="image/icon type">
+
+<link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5eaeec16cb28e900124f083e&product=inline-share-buttons&cms=sop' async='async'></script>
 </head>
+
 <body>
 <!-- Contains heading -->
 <header>
@@ -17,7 +19,50 @@
 <!-- Contains the drop down menu and the graph and details -->
 <main>
     <p>This model is based on simply finding the best fitting asymmetric normal distribution on each country case data.</p>
-    <iframe src="charts/singhrahuldps/BestFitBellCurve/WORLD.html" width="100%" height="370px" frameBorder="0"></iframe>
+    <div id="selects">
+        <select id='algoselect'>
+            <optgroup label='singhrahuldps'>
+                <option value = 'BestFitBellCurve'>BestFitBellCurve</option>
+            </optgroup>
+        </select>
+    <select id='countryselect'>
+        <option value="WORLD">World</option>
+        <option value="IND">India</option>
+        <option value="USA">United States</option>
+        <option value="ESP">Spain</option>
+        <option value="ITA">Italy</option>
+        <option value="GBR">United Kingdom</option>
+        <option value="DEU">Germany</option>
+        <option value="FRA">France</option>
+        <option value="TUR">Turkey</option>
+        <option value="RUS">Russia</option>
+        <option value="BRA">Brazil</option>
+        <option value="IRN">Iran</option>
+        <option value="CHN">China</option>
+        <option value="CAN">Canada</option>
+        <option value="BEL">Belgium</option>
+        <option value="PER">Peru</option>
+        <option value="NLD">Netherlands</option>
+        <option value="CHE">Switzerland</option>
+        <option value="ECU">Ecuador</option>
+    </select>
+    <button onClick="setHTML()">SELECT</button>
+    </div>
+    <iframe id='mapframe' src="charts/singhrahuldps/BestFitBellCurve/WORLD.html" width="100%" height="370px" frameBorder="0"></iframe>
+    <table id="losstable">
+        <thead>
+            <tr>
+                <th>Training Loss</th>
+                <th>Validation Loss</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.9</td>
+                <td>1.8</td>
+            </tr>
+        </tbody>
+    </table>
 </main>
 
 <!-- Contains sharing links -->
@@ -27,4 +72,13 @@
     </aside>
     <div class="sharethis-inline-share-buttons"></div>
 </footer>
+
+<script type="text/javascript" >
+    function setHTML(){
+        var countryselect = document.getElementById('countryselect');
+        var frame = document.getElementById('mapframe');
+        var newHTML= 'charts/singhrahuldps/BestFitBellCurve/' + countryselect.options[countryselect.selectedIndex].value + '.html';
+        frame.src = newHTML;
+    }
+</script>
 </body>

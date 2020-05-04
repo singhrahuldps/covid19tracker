@@ -18,9 +18,27 @@ main {
     width: 100%;
 }
 
+select {
+    height: 40px;
+    padding: 0 10px;
+    width: fit-content;
+}
+
+#selects {
+    margin: 0 auto;
+    width: fit-content;
+    display: flexbox;
+}
+
+#losstable{
+    margin: 0 auto;
+    width: fit-content;
+}
+
 h1 {
     font-family: 'Baloo Bhaina 2', cursive;
     font-size: 30pt;
+    color:darkcyan;
     text-align: center;
 }
 
