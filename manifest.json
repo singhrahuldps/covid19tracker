@@ -1,9 +1,10 @@
 {
     "name": "Experimental Covid-19 Tracker App",
     "short_name": "Covid19 Tracker",
-    "start_url": "/",
+    "start_url": "index.html",
     "display": "standalone",
     "background_color": "aquamarine",
+    "theme_color": "aquamarine",
     "description": "This app tracks when the pandemic might end",
     "icons": [{
         "src": "cticon.ico",
