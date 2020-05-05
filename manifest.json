@@ -7,8 +7,9 @@
     "theme_color": "aquamarine",
     "description": "This app tracks when the pandemic might end",
     "icons": [{
-        "src": "cticon.ico",
-        "type": "image/ico"
+        "src": "cticon.png",
+        "sizes": "300x300",
+        "type": "image/png"
         }]
     
 }
