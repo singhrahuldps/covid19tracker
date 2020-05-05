@@ -51,7 +51,7 @@ class GetData():
         self.countryCodes = [self.data[country].iso_code.unique()[0] for country in self.countries]
         self.countryCodes[0] = "WORLD"
 
-        createcountryselect(self.countryCodes, self.countryCodes)
+        createcountryselect(self.countries, self.countryCodes)
 
         self.tData = None
         self.tData = self.getTrainData()
