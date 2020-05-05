@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165472076-1"></script>
 <script>
@@ -16,9 +17,18 @@
 <meta name="theme-color" content="aquamarine">
 <link rel="icon" href="cticon.ico" type="image/icon type">
 
+<!--  Essential META Tags -->
+
+<meta property="og:title" content="Covid-19 Tracker">
+<meta property="og:description" content="Track when the pandemic might end">
+<meta property="og:image" content="cticon.ico">
+<meta property="og:url" content="http://singhrahuldps.github.io/tracker/">
+<meta name="twitter:card" content="summary">
+
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5eaeec16cb28e900124f083e&product=inline-share-buttons&cms=sop' async='async'></script>
+<script type="text/javascript" src='script.js'></script>
 </head>
 
 <body>
@@ -56,7 +66,7 @@
         <option value="CHE">Switzerland</option>
         <option value="ECU">Ecuador</option>
     </select>
-    <button onClick="setHTML()">SELECT</button>
+    <button id='setHTML'>SELECT</button>
     </div>
     <iframe id='mapframe' src="charts/singhrahuldps/BestFitBellCurve/WORLD.html" width="100%" height="370px" frameBorder="0"></iframe>
     <table id="losstable">
@@ -83,13 +93,4 @@
     </aside>
     <div class="sharethis-inline-share-buttons"></div>
 </footer>
-
-<script type="text/javascript" >
-    function setHTML(){
-        var countryselect = document.getElementById('countryselect');
-        var frame = document.getElementById('mapframe');
-        var newHTML= 'charts/singhrahuldps/BestFitBellCurve/' + countryselect.options[countryselect.selectedIndex].value + '.html';
-        frame.src = newHTML;
-    }
-</script>
 </body>
