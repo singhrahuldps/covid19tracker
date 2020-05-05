@@ -2,6 +2,7 @@ import requests
 import pandas as pd
 import numpy as np
 import os
+import io
 from datetime import datetime
 
 url = 'https://covid.ourworldindata.org/data/owid-covid-data.csv'
@@ -26,6 +27,16 @@ def savePredictions(username, algoname, countries, preds):
 
     df.to_csv("preds/" + username + "_" + algoname + "_" + str(dt) + ".csv")
 
+def createcountryselect(countryNames, countryCodes):
+    script = "window.addEventListener('DOMContentLoaded', function(){\ninnerHTML = \""
+    text = ""
+    for country,code in zip(countryNames, countryCodes):
+        text += "<option value = \'" + code  +"\'>" + country + "</option>"
+    script += text + "\";\nvar countryselect = document.querySelector('#countryselect');\ncountryselect.innerHTML = innerHTML;\n});"
+    out_file_path = "countryselect.js"
+    with io.open(out_file_path, mode='w') as f:
+        f.write(script)
+
 class GetData():
     def __init__(self, numCountries = 19, delete_csv = False):
         myfile = requests.get(url)
@@ -39,6 +50,8 @@ class GetData():
         self.countries = topCountries
         self.countryCodes = [self.data[country].iso_code.unique()[0] for country in self.countries]
         self.countryCodes[0] = "WORLD"
+
+        createcountryselect(self.countryCodes, self.countryCodes)
 
         self.tData = None
         self.tData = self.getTrainData()

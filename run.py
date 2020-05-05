@@ -2,8 +2,25 @@ import DataHandler
 import Algorithms
 import ChartHandler
 import argparse
+import io
 
 NO_ARGUMENT = "__none__"
+
+def createAlgoSelect():
+    userClasses = dict([(name, cls) for name, cls in Algorithms.__dict__.items()
+                        if name in Algorithms.usernames])
+    script = "window.addEventListener('DOMContentLoaded', function(){\ninnerHTML = \""
+    text = ""
+    for username in userClasses:
+        text += "<optgroup label=\'" + username + "\'>"
+        usermod = userClasses[username]
+        for algo,desc in zip(usermod.classNames, usermod.classDescription):
+            text += "<option value = \'" + algo + "\' data-desc = \'" + desc +"\'>" + algo + "</option>"
+        text += "</optgroup>"
+    script += text + "\";\nvar algoselect = document.querySelector('#algoselect');\nalgoselect.innerHTML = innerHTML;\n});"
+    out_file_path = "algoselect.js"
+    with io.open(out_file_path, mode='w') as f:
+        f.write(script)
 
 def runAlgo(username, algoName, algoClass, countriesData):
     algo = algoClass(countriesData.countries, countriesData.countryCodes)
@@ -31,6 +48,7 @@ def main(username, algos):
     countriesData = DataHandler.GetData()
     
     if username == NO_ARGUMENT:
+        createAlgoSelect()
         for username in userClasses:
             usermod = userClasses[username]
             algomod = dict([(name, cls) for name, cls in usermod.__dict__.items() if name in usermod.classNames])

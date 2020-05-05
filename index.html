@@ -35,10 +35,14 @@
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5eaeec16cb28e900124f083e&product=inline-share-buttons&cms=sop' async='async'></script>
+
+<!--My scripts-->
+<script src='script.js'></script>
+<script src='algoselect.js'></script>
+<script src='countryselect.js'></script>
 </head>
 
 <body>
-    <script src='script.js'></script>
 <!-- Contains heading -->
 <header>
     <h1>COVID-19 TRACKER</h1>
@@ -48,11 +52,14 @@
     <p>We make predictions based on the algorithms sent by the GitHub community. Select an algorithm to view its predictions and related stats.</p>
     <div id="selects">
         <select id='algoselect'>
+            <!--
             <optgroup label='singhrahuldps'>
                 <option value = 'BestFitBellCurve'>BestFitBellCurve</option>
             </optgroup>
+        -->
         </select>
     <select id='countryselect'>
+        <!--
         <option value="WORLD">World</option>
         <option value="IND">India</option>
         <option value="USA">United States</option>
@@ -72,11 +79,13 @@
         <option value="NLD">Netherlands</option>
         <option value="CHE">Switzerland</option>
         <option value="ECU">Ecuador</option>
+        -->
     </select>
     <button id='setFrameHTML'>SELECT</button>
     </div>
     <p id='aboutalgo'>This model is based on simply finding the best fitting asymmetric normal distribution on each country case data.</p>
     <iframe id='mapframe' src="charts/singhrahuldps/BestFitBellCurve/WORLD.html" width="100%" height="370px" frameBorder="0"></iframe>
+    <!--
     <table id="losstable">
         <thead>
             <tr>
@@ -91,11 +100,12 @@
             </tr>
         </tbody>
     </table>
-        <p id="togithub">For adding your own algorithms <a href="https://github.com/singhrahuldps/covid19tracker">view on Github</a></p>
+    -->
+    <p id="togithub">For adding your own algorithms <a href="https://github.com/singhrahuldps/covid19tracker">view on Github</a></p>
 </main>
 
 <!-- Contains sharing links -->
-<footer >
+<footer>
     <aside>
         These are just experimentational predictions. We do not guarantee the accuracy of the results in any manner.
     </aside>

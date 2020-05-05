@@ -1,0 +1,5 @@
+window.addEventListener('DOMContentLoaded', function(){
+innerHTML = "<option value = 'WORLD'>WORLD</option><option value = 'USA'>USA</option><option value = 'ESP'>ESP</option><option value = 'ITA'>ITA</option><option value = 'GBR'>GBR</option><option value = 'DEU'>DEU</option><option value = 'RUS'>RUS</option><option value = 'FRA'>FRA</option><option value = 'TUR'>TUR</option><option value = 'BRA'>BRA</option><option value = 'IRN'>IRN</option><option value = 'CHN'>CHN</option><option value = 'CAN'>CAN</option><option value = 'BEL'>BEL</option><option value = 'PER'>PER</option><option value = 'IND'>IND</option><option value = 'NLD'>NLD</option><option value = 'ECU'>ECU</option><option value = 'CHE'>CHE</option>";
+var countryselect = document.querySelector('#countryselect');
+countryselect.innerHTML = innerHTML;
+});

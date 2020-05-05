@@ -3,6 +3,7 @@ import pandas as pd
 from scipy.stats import norm
 
 classNames = ['BestFitBellCurve']
+classDescription = ['This model is based on simply finding the best fitting asymmetric normal distribution on each country case data.']
 
 def fetchCountryData(data, countryName):
     countryData = data[countryName]
