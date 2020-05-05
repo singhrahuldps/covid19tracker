@@ -15,7 +15,7 @@ class MyAlgorithm():
     def __init__(self, countryNames, countryCodes):
         #  countryNames, countryCodes are list of str
         # statements
-    
+
     def fit(self, data):
         # data is a dictionary with country names as the key
         # and corresponding pandas dataFrame as value
@@ -26,6 +26,36 @@ class MyAlgorithm():
         # statements
         # returns list
         return your_new_cases_prediction_for_each_country_in_the_order_of_country_names
+```
+
+Your module must have your github username as its name. For example: **Algorithms/singhrahuldps.py**. It should have the following structure:
+
+```python
+# your imports
+classNames = ['Algo1', 'Algo2']
+classDescription = ['Algo1 Description', 'Algo2 Description']
+
+class Algo1():
+    def __init__(self, countryNames, countryCodes):
+        #statements
+
+    def fit(self, data):
+        # statements
+
+    def predict(self):
+        # statements
+        return predictions
+
+class Algo2():
+    def __init__(self, countryNames, countryCodes):
+        #statements
+
+    def fit(self, data):
+        # statements
+
+    def predict(self):
+        # statements
+        return predictions
 ```
 
 View your changes on **index.html** by running the following command in terminal
@@ -45,3 +75,5 @@ python run.py -u yourGithubUsername -a YourAlgorithm1, YourAlgorithm2, YourAlgor
 ```bash
 pip install numpy scipy pandas requests pathlib bokeh
 ```
+
+Mention additional dependencies for your class in the pull request.
