@@ -19,11 +19,12 @@
 
 <!--  Essential META Tags -->
 
-<meta property="og:title" content="Covid-19 Tracker">
-<meta property="og:description" content="Track when the pandemic might end">
-<meta property="og:image" content="cticon.png">
+<meta property="og:image" content="ctimage.png"/>
+<meta property="og:title" content="Covid-19 Tracker"/>
+<meta property="og:description" content="Track when the pandemic might end"/>
+<meta property="og:type" content="website" />
 <meta property="og:url" content="http://singhrahuldps.github.io/tracker/">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary"/>
 
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
@@ -38,7 +39,7 @@
 </header>
 <!-- Contains the drop down menu and the graph and details -->
 <main>
-    <p>This model is based on simply finding the best fitting asymmetric normal distribution on each country case data.</p>
+    <p>We make predictions based on the algorithms sent by the GitHub community. Select an algorithm to view its predictions and related stats.</p>
     <div id="selects">
         <select id='algoselect'>
             <optgroup label='singhrahuldps'>
@@ -68,6 +69,7 @@
     </select>
     <button id='setHTML'>SELECT</button>
     </div>
+    <p id='aboutalgo'>This model is based on simply finding the best fitting asymmetric normal distribution on each country case data.</p>
     <iframe id='mapframe' src="charts/singhrahuldps/BestFitBellCurve/WORLD.html" width="100%" height="370px" frameBorder="0"></iframe>
     <table id="losstable">
         <thead>
@@ -78,8 +80,8 @@
         </thead>
         <tbody>
             <tr>
-                <td>1.9</td>
-                <td>1.8</td>
+                <td id='trainingloss'>1.9</td>
+                <td id='validloss'>1.8</td>
             </tr>
         </tbody>
     </table>
@@ -89,7 +91,7 @@
 <!-- Contains sharing links -->
 <footer >
     <aside>
-        This is just an experimentational prediction. We do not guarantee the accuracy of the results in any manner.
+        These are just experimentational predictions. We do not guarantee the accuracy of the results in any manner.
     </aside>
     <div class="sharethis-inline-share-buttons"></div>
 </footer>
