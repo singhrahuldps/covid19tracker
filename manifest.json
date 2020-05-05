@@ -1,7 +1,7 @@
 {
     "name": "Experimental Covid-19 Tracker App",
     "short_name": "Covid19 Tracker",
-    "start_url": "index.html",
+    "start_url": "https://singhrahuldps.github.io/covid19tracker/",
     "display": "standalone",
     "background_color": "aquamarine",
     "theme_color": "aquamarine",
