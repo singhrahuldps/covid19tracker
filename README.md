@@ -2,11 +2,15 @@
 
 Create your own algorithms which fit on the covid-19 Dataset and send a Pull Request. Accepted code algorithms will be published to the website [singhrahuldps.github.io/covid19tracker](https://singhrahuldps.github.io/covid19tracker).
 
+The data we use can be found at [covid.ourworldindata.org](https://covid.ourworldindata.org/data/owid-covid-data.csv).
+
 ## Add your own algorithm
 
 Add your module to the Algorithm folder and add the py file name to the __init__.py file. Make sure to keep the file name to be your GitHub username. Also add the import statement for your module in the __init__.py.
 
 Add a classNames list to your module which contains the names of your algorithm classes.
+
+The training data is Covid-19 data 10 days before the present date and the validation loss is measured for the next 10 days.
 
 Your class must have the following methods:
 
@@ -77,3 +81,9 @@ pip install numpy scipy pandas requests pathlib bokeh
 ```
 
 Mention additional dependencies for your class in the pull request.
+
+## Features to add
+
+* Displaying a table for the training and validation loss of the algorithm
+* LeaderBoard of algorithms
+* UI improvements
